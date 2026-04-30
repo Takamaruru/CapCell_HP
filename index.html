@@ -19,7 +19,7 @@
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap"
     rel="stylesheet" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7958462974718570"
-     crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
   <style>
     *,
     *::before,
@@ -842,6 +842,208 @@
     .reveal.visible {
       opacity: 1;
       transform: none;
+    }
+
+    /* ── MOBILE / TABLET ── */
+    @media (max-width: 900px) {
+
+      /* NAV */
+      nav {
+        padding: 0 20px;
+        height: 56px;
+      }
+
+      .nav-logo {
+        font-size: 17px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .nav-cta {
+        padding: 8px 16px;
+        font-size: 13px;
+      }
+
+      /* HERO */
+      .hero {
+        padding: 96px 20px 56px;
+        min-height: 0;
+      }
+
+      .hero h1 {
+        font-size: clamp(26px, 7vw, 38px);
+        line-height: 1.25;
+        margin-bottom: 16px;
+      }
+
+      .hero p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 28px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        width: 100%;
+        max-width: 320px;
+        gap: 10px;
+        margin-bottom: 48px;
+      }
+
+      .hero-actions .btn-primary,
+      .hero-actions .btn-secondary {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding: 13px 20px;
+        font-size: 14px;
+      }
+
+      /* SECTIONS */
+      .section {
+        padding: 72px 20px;
+      }
+
+      .section h2 {
+        font-size: clamp(22px, 6vw, 30px);
+      }
+
+      .section p {
+        font-size: 14px;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 40px;
+      }
+
+      .feature-card {
+        padding: 22px;
+      }
+
+      /* HOW IT WORKS */
+      .how-section {
+        padding: 72px 20px;
+      }
+
+      .how-steps {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        margin-top: 40px;
+      }
+
+      .how-steps::before {
+        display: none;
+      }
+
+      /* DEMO */
+      .demo-section {
+        padding: 72px 20px;
+      }
+
+      .demo-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        margin-top: 40px;
+      }
+
+      .code-block {
+        padding: 16px 12px;
+        font-size: 11px;
+        line-height: 1.5;
+      }
+
+      .code-line-num {
+        width: 18px;
+        margin-right: 10px;
+      }
+
+      /* METRICS */
+      .metrics-section {
+        padding: 72px 20px;
+      }
+
+      .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        margin-top: 40px;
+      }
+
+      .metric-card {
+        padding: 22px 16px;
+      }
+
+      .metric-value {
+        font-size: 32px;
+      }
+
+      .metric-label {
+        font-size: 12px;
+      }
+
+      /* CTA */
+      .cta-section {
+        padding: 72px 20px;
+      }
+
+      .cta-section h2 {
+        font-size: clamp(24px, 6vw, 34px);
+      }
+
+      .cta-section p {
+        font-size: 14px;
+      }
+
+      .cta-platforms {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .platform-btn {
+        justify-content: center;
+        padding: 13px 20px;
+      }
+
+      /* FOOTER */
+      footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 32px 20px;
+        text-align: center;
+      }
+
+      .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+      }
+
+      /* HERO MOCKUP - reduce shadow blur on mobile for perf */
+      .hero-mockup {
+        box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15) !important;
+      }
+
+      .mockup-float {
+        animation: none;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      /* Pricing cards stack cleanly */
+      .cta-section [style*="display:flex"][style*="gap:24px"] {
+        flex-direction: column;
+        align-items: stretch !important;
+      }
+
+      .cta-section [style*="min-width:240px"] {
+        min-width: 0 !important;
+        width: 100%;
+        transform: none !important;
+      }
     }
   </style>
 </head>
