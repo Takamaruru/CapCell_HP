@@ -480,6 +480,133 @@
       opacity: 1;
       transform: none;
     }
+
+    /* ── MOBILE / TABLET ── */
+    @media (max-width: 900px) {
+
+      /* NAV */
+      nav {
+        padding: 0 20px;
+        height: 56px;
+      }
+
+      .nav-logo {
+        font-size: 17px;
+      }
+
+      .nav-back {
+        font-size: 13px;
+      }
+
+      /* HERO */
+      .hero {
+        padding: 96px 20px 56px;
+      }
+
+      .hero h1 {
+        font-size: clamp(26px, 7vw, 38px);
+        line-height: 1.25;
+      }
+
+      .hero p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 32px;
+      }
+
+      /* DOWNLOAD CARDS */
+      .download-section {
+        padding: 56px 20px;
+      }
+
+      .download-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .download-card {
+        padding: 28px 24px;
+      }
+
+      .download-card p {
+        min-height: 0;
+      }
+
+      .platform-icon {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 16px;
+      }
+
+      .download-card h2 {
+        font-size: 20px;
+      }
+
+      .btn-download {
+        font-size: 14px;
+        padding: 13px;
+      }
+
+      /* REQUIREMENTS */
+      .req-section {
+        padding: 56px 20px;
+      }
+
+      .req-inner h2 {
+        font-size: 22px;
+        margin-bottom: 24px;
+      }
+
+      .req-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .req-card {
+        padding: 20px;
+      }
+
+      /* FAQ */
+      .faq-section {
+        padding: 56px 20px;
+      }
+
+      .faq-section h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
+      }
+
+      .faq-question {
+        font-size: 14px;
+        padding: 18px 0;
+      }
+
+      .faq-answer {
+        font-size: 13px;
+        line-height: 1.7;
+      }
+
+      /* FOOTER CTA */
+      .footer-cta {
+        padding: 56px 20px;
+      }
+
+      .footer-cta h2 {
+        font-size: 24px;
+      }
+
+      .footer-cta p {
+        font-size: 14px;
+      }
+
+      /* FOOTER */
+      footer {
+        flex-direction: column;
+        gap: 16px;
+        padding: 28px 20px;
+        text-align: center;
+      }
+    }
   </style>
 </head>
 
