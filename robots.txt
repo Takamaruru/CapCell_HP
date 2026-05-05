@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://takamaruru.github.io/CapCell_HP/sitemap.xml
