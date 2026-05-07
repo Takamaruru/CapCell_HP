@@ -208,9 +208,15 @@
       color: var(--text);
       text-wrap: pretty;
       margin-bottom: 20px;
+      word-break: keep-all;
+      overflow-wrap: break-word;
     }
 
-    .hero h1 span {
+    .hero h1 .hero-line {
+      display: inline-block;
+    }
+
+    .hero h1 .accent {
       color: var(--accent-dark);
     }
 
@@ -923,7 +929,7 @@
         margin-bottom: 16px;
         word-break: keep-all;
         line-break: strict;
-        overflow-wrap: anywhere;
+        overflow-wrap: break-word;
       }
 
       .hero p {
@@ -1126,7 +1132,7 @@
       </div>
     </div>
     <h1 class="anim-hero-2" id="hero-title">
-      アプリの画面構造を<span>ノードマップ</span>で可視化
+      <span class="hero-line">アプリの画面構造を</span><span class="hero-line"><span class="accent">ノードマップ</span>で可視化</span>
     </h1>
     <p class="anim-hero-3">
       CapCellは、アプリの画面構造をノードマップとして可視化し、ファイルパスと直接リンクさせることで、開発の全体像を一目で把握できるデスクトップツールです。
